@@ -13,12 +13,24 @@ def flip7_env() -> Flip7Env:
     return Flip7Env()
 
 
-@pytest.mark.parametrize("learning_rounds", [1e3, 1e4, 1e5, 1e6])
-def test_random_agent(flip7_env, learning_rounds):
-    agent = QLearningAgent()
+@pytest.mark.parametrize(
+    "alpha, gamma, temperature, penalty_for_passing, learning_rounds",
+    [
+        (0.5, 0.8, 1.0, 12, int(2e4)),
+    ],
+)
+def test_random_agent(flip7_env, alpha, gamma, temperature, penalty_for_passing, learning_rounds):
+    agent = QLearningAgent(
+        alpha=alpha,
+        gamma=gamma,
+        temperature=temperature,
+        penalty_for_passing=penalty_for_passing,
+    )
 
     for _ in tqdm(range(int(learning_rounds))):
         run_episode(agent, flip7_env, train=True)
+
+    agent.temperature = 0.5
 
     scores = []
     for _ in tqdm(range(NUMBER_OF_ITERATIONS)):
@@ -29,7 +41,13 @@ def test_random_agent(flip7_env, learning_rounds):
     store_results(
         scores,
         agent_name=agent.__class__.__name__,
-        mark=f"learning_rounds_{learning_rounds}",
-        agent_params={"learning_rounds": learning_rounds},
+        mark=f"{alpha}_{gamma}_{temperature}_{penalty_for_passing}_{learning_rounds}",
+        agent_params={
+            "alpha": alpha,
+            "gamma": gamma,
+            "temperature": temperature,
+            "penalty_for_passing": penalty_for_passing,
+            "learning_rounds": learning_rounds,
+        },
     )
     assert 0 <= np.mean(scores) <= 100

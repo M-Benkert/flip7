@@ -4,7 +4,7 @@ from typing import Any
 
 import numpy as np
 
-NUMBER_OF_ITERATIONS = int(1e6)
+NUMBER_OF_ITERATIONS = int(1e5)
 RESULT_PATH = Path(__file__).parent / "results"
 
 

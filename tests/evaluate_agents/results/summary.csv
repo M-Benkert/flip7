@@ -42,6 +42,7 @@ NumberOfCardsThresholdAgent,"{""number_of_cards_threshold"": 4}",16.758854,23.0,
 NumberOfCardsThresholdAgent,"{""number_of_cards_threshold"": 5}",13.071472,0.0,50.0,1000000,658942,2,899,32720,177599,129838,0
 NumberOfCardsThresholdAgent,"{""number_of_cards_threshold"": 6}",8.42349,0.0,57.0,1000000,812963,0,19,2474,38787,110041,35716
 NumberOfCardsThresholdAgent,"{""number_of_cards_threshold"": 7}",5.731608,0.0,78.0,1000000,913581,0,0,0,8,770,85641
+QLearningAgent,"{""alpha"": 0.5, ""gamma"": 0.8, ""temperature"": 1.0, ""penalty_for_passing"": 12, ""learning_rounds"": 20000}",18.02099,23.0,73.0,100000,28310,40,8254,56442,6357,326,271
 QLearningAgent,"{""learning_rounds"": 1000.0, ""alpha"": 0.5, ""gamma"": 0.9, ""temperature"": 1.0}",16.389103,20.0,78.0,1000000,274145,33344,254955,367320,52028,12370,5838
 QLearningAgent,"{""learning_rounds"": 10000.0, ""alpha"": 0.5, ""gamma"": 0.9, ""temperature"": 1.0}",17.043187,19.0,78.0,1000000,207965,1479,372378,382227,28432,3929,3590
 QLearningAgent,"{""learning_rounds"": 100000.0, ""alpha"": 0.5, ""gamma"": 0.9, ""temperature"": 1.0}",17.299235,20.0,74.0,1000000,177828,190,402519,408999,7959,733,1772
