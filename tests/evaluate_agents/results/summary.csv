@@ -42,6 +42,10 @@ NumberOfCardsThresholdAgent,"{""number_of_cards_threshold"": 4}",16.758854,23.0,
 NumberOfCardsThresholdAgent,"{""number_of_cards_threshold"": 5}",13.071472,0.0,50.0,1000000,658942,2,899,32720,177599,129838,0
 NumberOfCardsThresholdAgent,"{""number_of_cards_threshold"": 6}",8.42349,0.0,57.0,1000000,812963,0,19,2474,38787,110041,35716
 NumberOfCardsThresholdAgent,"{""number_of_cards_threshold"": 7}",5.731608,0.0,78.0,1000000,913581,0,0,0,8,770,85641
+QLearningAgent,"{""learning_rounds"": 1000.0, ""alpha"": 0.5, ""gamma"": 0.9, ""temperature"": 1.0}",16.389103,20.0,78.0,1000000,274145,33344,254955,367320,52028,12370,5838
+QLearningAgent,"{""learning_rounds"": 10000.0, ""alpha"": 0.5, ""gamma"": 0.9, ""temperature"": 1.0}",17.043187,19.0,78.0,1000000,207965,1479,372378,382227,28432,3929,3590
+QLearningAgent,"{""learning_rounds"": 100000.0, ""alpha"": 0.5, ""gamma"": 0.9, ""temperature"": 1.0}",17.299235,20.0,74.0,1000000,177828,190,402519,408999,7959,733,1772
+QLearningAgent,"{""learning_rounds"": 1000000.0, ""alpha"": 0.5, ""gamma"": 0.9, ""temperature"": 1.0}",17.119983,19.0,68.0,1000000,160308,175,449531,383635,5884,118,349
 RandomAgent,"{""probability_draw"": 0.2}",1.919406,0.0,73.0,1000000,808149,113389,69323,8313,760,59,7
 RandomAgent,"{""probability_draw"": 0.4}",4.430457,0.0,78.0,1000000,636543,175920,140744,37259,7930,1368,236
 RandomAgent,"{""probability_draw"": 0.5}",5.8517,0.0,78.0,1000000,568916,185335,167423,57655,16384,3367,920
@@ -50,19 +54,19 @@ RandomAgent,"{""probability_draw"": 0.7}",8.319627,0.0,78.0,1000000,514431,15969
 RandomAgent,"{""probability_draw"": 0.8}",8.878066,0.0,78.0,1000000,556344,123334,150379,90566,43663,15717,19997
 RandomAgent,"{""probability_draw"": 0.9}",8.282127,0.0,78.0,1000000,677098,70578,93420,64868,36324,14699,43013
 RandomAgent,"{""probability_draw"": 1.0}",5.708227,0.0,78.0,1000000,913890,0,0,0,8,779,85323
-ScoreThresholdAgent,"{""score_threshold"": 10}",12.960234,12.0,21.0,1000000,43793,152257,782726,21224,0,0,0
-ScoreThresholdAgent,"{""score_threshold"": 15}",16.611789,18.0,26.0,1000000,132213,0,580247,287540,0,0,0
-ScoreThresholdAgent,"{""score_threshold"": 18}",17.738861,20.0,42.0,1000000,184493,0,323566,491939,0,2,0
-ScoreThresholdAgent,"{""score_threshold"": 20}",18.241539,22.0,46.0,1000000,233529,0,105731,646992,13740,8,0
-ScoreThresholdAgent,"{""score_threshold"": 21}",18.397603,23.0,47.0,1000000,258437,0,0,707331,34213,19,0
-ScoreThresholdAgent,"{""score_threshold"": 22}",18.510936,24.0,48.0,1000000,287950,0,0,644937,67094,19,0
-ScoreThresholdAgent,"{""score_threshold"": 23}",18.503851,25.0,49.0,1000000,313914,0,0,585142,100908,36,0
-ScoreThresholdAgent,"{""score_threshold"": 24}",18.44787,26.0,50.0,1000000,343126,0,0,510665,146120,89,0
-ScoreThresholdAgent,"{""score_threshold"": 25}",18.395496,26.0,51.0,1000000,363465,0,0,453247,183142,139,7
-ScoreThresholdAgent,"{""score_threshold"": 26}",18.259362,27.0,52.0,1000000,386609,0,0,387495,225671,169,56
-ScoreThresholdAgent,"{""score_threshold"": 28}",17.839918,28.0,54.0,1000000,437108,0,0,237534,324800,318,240
-ScoreThresholdAgent,"{""score_threshold"": 30}",17.145248,30.0,56.0,1000000,490991,0,0,80807,421219,6248,735
-ScoreThresholdAgent,"{""score_threshold"": 32}",16.223558,0.0,58.0,1000000,546663,0,0,0,417862,33559,1916
-ScoreThresholdAgent,"{""score_threshold"": 35}",14.724779,0.0,61.0,1000000,620722,0,0,0,281059,93028,5191
-ScoreThresholdAgent,"{""score_threshold"": 40}",11.778808,0.0,66.0,1000000,735073,0,0,0,42827,201765,20335
-ScoreThresholdAgent,"{""score_threshold"": 50}",7.006943,0.0,76.0,1000000,882468,0,0,0,7,14547,102978
+ScoreThresholdAgent,"{""score_threshold"": 10}",12.960441,12.0,21.0,1000000,43654,152461,782726,21159,0,0,0
+ScoreThresholdAgent,"{""score_threshold"": 15}",16.592039,18.0,26.0,1000000,133266,0,579832,286902,0,0,0
+ScoreThresholdAgent,"{""score_threshold"": 18}",17.703771,20.0,44.0,1000000,185746,0,324355,489894,0,5,0
+ScoreThresholdAgent,"{""score_threshold"": 20}",18.258779,22.0,46.0,1000000,233093,0,105423,647640,13838,6,0
+ScoreThresholdAgent,"{""score_threshold"": 21}",18.395162,23.0,47.0,1000000,258095,0,0,707858,34027,20,0
+ScoreThresholdAgent,"{""score_threshold"": 22}",18.493246,24.0,48.0,1000000,288675,0,0,644605,66697,23,0
+ScoreThresholdAgent,"{""score_threshold"": 23}",18.524174,25.0,49.0,1000000,313282,0,0,585486,101187,45,0
+ScoreThresholdAgent,"{""score_threshold"": 24}",18.457974,26.0,50.0,1000000,342803,0,0,510713,146411,73,0
+ScoreThresholdAgent,"{""score_threshold"": 25}",18.38259,26.0,51.0,1000000,363943,0,0,452521,183399,127,10
+ScoreThresholdAgent,"{""score_threshold"": 26}",18.271039,27.0,52.0,1000000,386196,0,0,388428,225138,188,50
+ScoreThresholdAgent,"{""score_threshold"": 28}",17.837967,28.0,54.0,1000000,437042,0,0,237698,324718,316,226
+ScoreThresholdAgent,"{""score_threshold"": 30}",17.119779,30.0,56.0,1000000,491769,0,0,80950,420364,6188,729
+ScoreThresholdAgent,"{""score_threshold"": 32}",16.197641,0.0,58.0,1000000,547239,0,0,0,417794,33175,1792
+ScoreThresholdAgent,"{""score_threshold"": 35}",14.694003,0.0,61.0,1000000,621617,0,0,0,280246,92828,5309
+ScoreThresholdAgent,"{""score_threshold"": 40}",11.81667,0.0,66.0,1000000,734362,0,0,0,42708,202265,20665
+ScoreThresholdAgent,"{""score_threshold"": 50}",7.027853,0.0,76.0,1000000,882093,0,0,0,10,14647,103250

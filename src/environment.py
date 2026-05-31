@@ -6,7 +6,7 @@ from .hand import Hand
 
 class State:
     def __init__(self, hand: Hand):
-        self.hand = hand
+        self.hand = hand.copy()
 
 
 class Flip7Env:

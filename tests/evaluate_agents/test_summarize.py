@@ -2,7 +2,7 @@ import json
 
 import pandas as pd
 
-from tests.simple_agents.utils import RESULT_PATH
+from tests.evaluate_agents.utils import RESULT_PATH
 
 
 def test_summarize():

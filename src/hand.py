@@ -1,3 +1,5 @@
+from typing import Self
+
 from .card import UNIQUE_CARDS, Card
 
 
@@ -31,6 +33,11 @@ class Hand:
             score += self.SEVEN_CARD_BONUS
 
         return score
+
+    def copy(self) -> Self:
+        new_hand = Hand()
+        new_hand.cards = self.cards.copy()
+        return new_hand
 
     def get_representation(self) -> list[int]:
         # Return a list of counts of each card in the hand, in the same order as UNIQUE_CARDS

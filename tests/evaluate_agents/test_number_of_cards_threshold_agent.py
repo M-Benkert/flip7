@@ -5,7 +5,7 @@ from tqdm import tqdm
 from src.environment import Flip7Env
 from src.main import run_episode
 from src.simple_agents.number_of_cards_threshold_agent import NumberOfCardsThresholdAgent
-from tests.simple_agents.utils import NUMBER_OF_ITERATIONS, store_results
+from tests.evaluate_agents.utils import NUMBER_OF_ITERATIONS, store_results
 
 
 @pytest.fixture
